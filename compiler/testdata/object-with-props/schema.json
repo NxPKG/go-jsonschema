@@ -1,0 +1,27 @@
+{
+  "title": "object-with-props",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["p1"],
+  "properties": {
+	"p0": {
+	  "type": "string"
+	},
+	"p1": {
+	  "type": "number"
+	},
+	"p2": {
+	  "$ref": "#/definitions/P2"
+	}
+  },
+  "definitions": {
+	"P2": {
+	  "type": "object",
+	  "properties": {
+		"a":  {
+		  "type": "string"
+		}
+	  }
+	}
+  }
+}
